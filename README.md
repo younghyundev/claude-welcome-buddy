@@ -15,11 +15,20 @@ Put your `/buddy` companion on the Claude Code welcome screen — with rarity co
 ╰────────────────────────────────╯
 ```
 
-## Usage
+## Usage (npx)
 
 ```bash
 npx claude-welcome-buddy apply     # apply your /buddy to the welcome screen
 npx claude-welcome-buddy restore   # restore original welcome screen
+```
+
+## Usage (clone)
+
+```bash
+git clone https://github.com/younghyundev/claude-welcome-buddy.git
+cd claude-welcome-buddy
+npm run apply
+npm run restore
 ```
 
 ## How It Works
@@ -29,18 +38,18 @@ npx claude-welcome-buddy restore   # restore original welcome screen
 3. Replaces the welcome screen render function with your buddy's ASCII art
 4. Applies the rarity color so it matches `/buddy` output
 
-| Rarity | Color |
-|-----------|---------|
-| Common | Gray |
-| Uncommon | Green |
-| Rare | Blue |
-| Epic | Purple |
-| Legendary | Gold |
+| Rarity    | Color  |
+| --------- | ------ |
+| Common    | Gray   |
+| Uncommon  | Green  |
+| Rare      | Blue   |
+| Epic      | Purple |
+| Legendary | Gold   |
 
 ## Notes
 
 - A backup of `cli.js` is created automatically before patching
-- Patches reset when Claude Code updates — just re-run `apply`
+- `hook` registers a macOS launchd agent that watches `cli.js` for changes. Whenever Claude Code updates, your buddy is re-applied automatically.
 - No dependencies required
 
 ## License

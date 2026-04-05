@@ -14,11 +14,17 @@
     "ascii-art",
     "customization"
   ],
-  "author": "",
+  "author": "younghyundev",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/younghyundev/claude-welcome-buddy"
+  },
+  "scripts": {
+    "apply": "node bin/cli.js apply",
+    "restore": "node bin/cli.js restore",
+    "hook": "node bin/cli.js hook",
+    "unhook": "node bin/cli.js unhook"
   },
   "engines": {
     "node": ">=18"
