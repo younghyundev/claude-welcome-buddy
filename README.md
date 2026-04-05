@@ -15,6 +15,12 @@ Put your `/buddy` companion on the Claude Code welcome screen — with rarity co
 ╰────────────────────────────────╯
 ```
 
+## Install
+
+```bash
+npm install -g claude-welcome-buddy
+```
+
 ## Usage (npx)
 
 ```bash
