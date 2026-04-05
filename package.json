@@ -1,0 +1,30 @@
+{
+  "name": "claude-welcome-buddy",
+  "version": "1.0.0",
+  "description": "Put your /buddy companion on the Claude Code welcome screen",
+  "bin": {
+    "claude-welcome-buddy": "./bin/cli.js"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "buddy",
+    "companion",
+    "welcome-screen",
+    "ascii-art",
+    "customization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "lib/"
+  ]
+}
